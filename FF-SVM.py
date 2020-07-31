@@ -165,3 +165,4 @@ print("Final Accuracy: %.6f%% (%.6f%%)" % (evaluation.mean(), evaluation.std()))
 total = ((df.drop("Label", axis=1).columns.values, gene_take_or_not, Best))
 
 df2 = pd.DataFrame(total, ["Features", "Selection", "Importance"])
+df2.to_excel(f"FF-SVM-Feature-Selection-{file_}")

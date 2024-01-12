@@ -153,7 +153,7 @@ print(Best)
 true_number = np.array(np.unique(feature_take_or_not, return_counts=True)).T
 
 
-bestX = X[:, gene_take_or_not]
+bestX = X[:, feature_take_or_not]
 
 print(true_number)
 
@@ -162,7 +162,7 @@ loocv = LeaveOneOut()
 evaluation = cross_val_score(s, bestX, y,  cv=loocv)
 print("Final Accuracy: %.6f%% (%.6f%%)" % (evaluation.mean(), evaluation.std()))
 
-total = ((df.drop("Label", axis=1).columns.values, gene_take_or_not, Best))
+total = ((df.drop("Label", axis=1).columns.values, feature_take_or_not, Best))
 
 df2 = pd.DataFrame(total, ["Features", "Selection", "Importance"])
 df2.to_excel(f"FF-SVM-Feature-Selection-{file_}", index=False)

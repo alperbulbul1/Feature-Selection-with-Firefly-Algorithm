@@ -2,3 +2,7 @@
 # Feature-Selection-with-Firefly-Algorithm
 
 Label column must be determined for using Feature selection with Firefly algorithm. In addition, the filename must be defined in the "file_" variable.
+
+
+Ref:
+Almugren, N., & Alshamlan, H. (2019, July). FF-SVM: new firefly-based gene selection algorithm for microarray cancer classification. In 2019 IEEE conference on computational intelligence in bioinformatics and computational biology (CIBCB) (pp. 1-6). IEEE.
